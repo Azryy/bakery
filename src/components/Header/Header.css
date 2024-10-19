@@ -2,9 +2,12 @@
     height: 35vw;
     margin: 30px auto;
     background: url('/kapalaran-header.png') no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     position: relative;
-
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .header-contents {
@@ -12,47 +15,97 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 1.0vw;
+    gap: 1vw;
     max-width: 50%;
     left: 4vw;
-    bottom: 60%;
+    bottom: 20%;
     animation: fadeIn 3s;
-    
 }
 
 .header-contents h2 {
     font-weight: 500;
-    font-size: 25px;
+    font-size: 3vw;
+    color: rgb(201, 162, 79)
+}
 
+.header-contents p {
+    font-size: 1.5vw;
+    color: rgb(201, 162, 79)
 }
 
 .header-contents button {
     border: none;
     color: white;
     font-weight: 500;
-    padding: 1vw 2.3vw;
-    background-color: rgb(190, 132, 66);
-    font-size: max(1vw, 13px);
+    padding: 1.5vw 3vw;
+    background-color: rgb(201, 162, 79);
+    font-size: max(1vw, 14px); 
     border-radius: 50px;
+    cursor: pointer;
 }
 
-@media(max-width:1050px){
-    
-    .header-contents{
-        max-width: 45%;
+
+@media (max-width: 1050px) {
+    .header-contents {
+        max-width: 60%;
+        left: 3vw;
+        bottom: 25%;
+    }
+
+    .header-contents h2 {
+        font-size: 4vw; 
+    }
+
+    .header-contents p {
+        font-size: 1.8vw;
+    }
+
+    .header-contents button {
+        padding: 2vw 4vw;
     }
 }
-@media(max-width:750px){
-   
-    .header-contents{
-        max-width: 65%;
+
+
+@media (max-width: 750px) {
+    .header {
+        height: 50vw;
+        background-size: cover;
+        background-position: top;
     }
+
+    .header-contents {
+        max-width: 75%;
+        left: 5vw;
+        bottom: 20%;
+    }
+
+    .header-contents h2 {
+        font-size: 5vw; 
+    }
+
     .header-contents p {
+        font-size: 2vw;
         display: none;
     }
-    .header-contents button{
-        padding: 2vw 4vw;
 
+    .header-contents button {
+        padding: 3vw 5vw;
     }
 }
 
+
+@media (max-width: 480px) {
+    .header-contents {
+        max-width: 85%;
+        left: 4vw;
+        bottom: 15%;
+    }
+
+    .header-contents h2 {
+        font-size: 6vw;
+    }
+
+    .header-contents button {
+        padding: 4vw 6vw;
+    }
+}

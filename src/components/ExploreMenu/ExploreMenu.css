@@ -2,17 +2,20 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 0 5vw; 
 }
 
 .explore-menu h1 {
     color: #262626;
     font-weight: 500;
-
+    font-size: 3vw;
 }
 
-.explore-menu-text{
+.explore-menu-text {
     max-width: 60%;
-    color:#262626;
+    color: #262626;
+    font-size: 1.5vw; 
+    line-height: 1.5;
 }
 
 .explore-menu-list {
@@ -21,47 +24,100 @@
     align-items: center;
     gap: 30px;
     text-align: center;
-    margin: 20px 0px;
-    overflow-x: scroll;
+    margin: 20px 0;
+    overflow-x: auto;
+    padding-bottom: 10px; 
 }
 
-.explore-menu-list::-webkit-scrollbar{
-    display: none;
+.explore-menu-list::-webkit-scrollbar {
+    display: none; 
 }
 
 .explore-menu-list-item img {
     width: 7.5vw;
     min-width: 80px;
+    max-width: 120px;
     cursor: pointer;
     border-radius: 50%;
     transition: 0.2s;
 }
 
-.explore-menu-list-item p{
+.explore-menu-list-item p {
     margin-top: 10px;
     color: #747474;
-    font-size: max(1.4vw,16px);
+    font-size: max(1.4vw, 16px); 
     cursor: pointer;
 }
 
 .explore-menu hr {
-    margin: 10px 0px;
+    margin: 10px 0;
     height: 2px;
     background-color: #e2e2e2;
     border: none;
-
 }
 
 .explore-menu-list-item .active {
     border: 4px solid tomato;
     padding: 2px;
-    
 }
 
-@media (max-width:1050px){
-    .explore-menu-text{
-        max-width: 100%;
-        font-size: 14px;
-        
+
+@media (max-width: 1050px) {
+    .explore-menu-text {
+        max-width: 80%;
+        font-size: 1.2vw; 
+    }
+
+    .explore-menu h1 {
+        font-size: 4vw; 
+    }
+
+    .explore-menu-list-item img {
+        width: 10vw; 
     }
 }
+
+@media (max-width: 750px) {
+    .explore-menu {
+        padding: 0 3vw; 
+    }
+
+    .explore-menu-text {
+        max-width: 100%;
+        font-size: 3.5vw;
+    }
+
+    .explore-menu h1 {
+        font-size: 6vw; 
+
+    .explore-menu-list {
+        gap: 15px; 
+    }
+
+    .explore-menu-list-item img {
+        width: 14vw; 
+    }
+
+    .explore-menu-list-item p {
+        font-size: 4vw; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .explore-menu h1 {
+        font-size: 7vw;
+    }
+
+    .explore-menu-text {
+        font-size: 4vw; 
+    }
+
+    .explore-menu-list-item img {
+        width: 18vw; 
+    }
+
+    .explore-menu-list-item p {
+        font-size: 5vw; 
+    }
+}}
