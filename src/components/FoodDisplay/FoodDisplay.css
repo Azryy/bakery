@@ -18,7 +18,7 @@
     row-gap: 20px;
 }
 
-/* Medium Screens (Tablets) */
+
 @media (max-width: 1050px) {
     .food-display-list {
         grid-template-columns: repeat(2, 1fr); 
