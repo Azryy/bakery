@@ -18,6 +18,10 @@ const LoginPopup = ({ setShowLogin }) => {
                     )}
                     <input type="email" placeholder='Enter your email' required />
                     <input type="password" placeholder='Enter your password' required />
+                    {currState === "Login" && (
+                         <a href="" className='forgot-password'>Forgot password?</a>
+                    )}
+                  
                     {currState === "Sign up" && (
                         <input type="password" placeholder='Confirm your password' required />
                     )}
