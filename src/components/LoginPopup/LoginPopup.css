@@ -76,3 +76,8 @@
     font-weight: 500;
     cursor: pointer;
 }
+
+.forgot-password{
+    text-decoration: solid;
+    color: tomato;
+}
